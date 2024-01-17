@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>스타일시트</title>
+    <link rel="stylesheet" href="../reset.css" />
+
+    <style>
+      a {
+        color: black;
+      }
+
+      .text-maincolor {
+        color: green;
+      }
+
+      .text-pointcolor {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>스마트폰 웹 디자인</h1>
+    <!-- 컨트롤 + d 캍은텍스트 복수 선택 -->
+    <h2 class="text-maincolor">Smartphone</h2>
+    <p class="text-maincolor">
+      스마트폰 가입자가 <span class="text-pointcolor">급속히 </span>증가하는
+    </p>
+
+    <!-- css에는 상속되는 속성과 상속되지 않는 속성이 있다.
+    텍스트 관련 태그는 거의 다 상속된다. (컬러도 상속됨)하지만 상속받은 속성은 우선순위가 낮다 -->
+
+    <a href="#">여기를 클릭하세요</a>
+
+    <!-- 아래와 같은 a태그는 p태그로  .text-maincolor을 상속 받지만
+    a태그 자체에 color: black이 지정되어 있기때문에 블랙이 수선순위가 된다-->
+
+    <p class="text-maincolor">
+      내용을 자세히 확인하려면 <a href="#">여기</a>클릭하세요
+    </p>
+
+    <!-- 이렇게 쓰면 초록으로 바뀜 -->
+
+    <p class="text-maincolor">
+      내용을 자세히 확인하려면
+      <a href="#" class="text-maincolor">여기</a>클릭하세요
+    </p>
+  </body>
+</html>
