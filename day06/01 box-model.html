@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        background-color: pink;
+
+        /* 컨텐츠의 너비, 높이를 설정하는 속성 */
+        width: 100px;
+        height: 100px;
+
+        /* 테두리를 설정라는 속성, 순서 */
+        border: 1px solid black;
+
+        /* 박스 내부의 여백 */
+        padding: 16px;
+
+        /* 외부박스의 여백 */
+        /* 마진은 사설정값이 두가지 박스의 동시 외부여백이 떨어지는 것이 아니라
+        박스 사이의 한 번의 여백만을 설정한다 */
+
+        margin: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <!-- 
+      컨텐츠(파랑): 실제로 내용이 들어갈 수 있는 부분
+      패딩(연두): 내부 여백
+      보디(검정): 테두리 라인
+      마진(주황): 외부 여백        -->
+  </body>
+</html>
