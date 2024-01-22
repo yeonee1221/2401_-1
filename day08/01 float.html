@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+      }
+
+      .pink-box {
+        background-color: pink;
+        float: left;
+      }
+
+      .red-box {
+        background-color: red;
+        float: left;
+      }
+
+      /* 플로트는 박스를 가로로배치하기 위해서 사용한 이전 시대의 속성
+      float(부유하다) 라는 이름을 가지고 있는 만큼
+      컨텐츠들이 둥둥 떠다녀 웹 구조를 잡을떄 의도하지 않은대로 작동할 때가 많다.
+      몇년 전 까지 브라우저의 호환성때문에 float도 숙련될것을 권유했지만 
+      2024년에 float는 숙련될 대상이 아님 옛날에 이런걸 사용 했구나 정도만 알고 있으면 됌      
+       */
+
+      .blue-box {
+        background-color: blue;
+        clear: both;
+        float: right;
+      }
+
+      /* clear 속성을 사용하면 이전 태그들의 float와 겹치는 것을 방지할 수 있다  */
+
+      .green-box {
+        background-color: green;
+        float: right;
+      }
+
+      /* float : left 속성은 태그가 오른쪽으로 정렬하지만 순서사 반대로 바뀌게 된다. */
+    </style>
+  </head>
+  <body>
+    <!--  
+      div.pink-box
+      div.red-box 
+    -->
+
+    <div class="pink-box box"></div>
+    <div class="red-box box"></div>
+
+    <div class="blue-box box"></div>
+    <div class="green-box box"></div>
+  </body>
+</html>
