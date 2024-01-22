@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 이미지 사용은 웹표준상 대체텍스크가 빠지면 에러 간단라도 적어준다 -->
+    <!-- 아래내용은 대체텍스트가 빠져서 웹표준위반행위 -->
+
+    <img src="../img/다운로드.jpg" alt="" />
+    <img src="/img/다운로드.jpg" alt="" />
+    <img src="./다운로드.jpg" />
+
+    <!-- *같은폴더*에 있는 이미지를 불러 올 때 ../ 불러올 이미지 이름-->
+
+    <!-- *다른폴더*에 있는 이미지를 불러 올 때 두가지지의 방법이 있는데 절대경로, 상대경로 -->
+    <!-- 절대경로 '/' -->
+    <!-- 상대경로 ../ 또는 폴더내의 이름으로 시작 -->
+
+    <!-- 내컴퓨터로만 할 때는  '/'만으로 해도 경로 유실이 없기때문에 상관이 없지만 
+    다른 컴퓨터에서 사진을 열때는 경로유시르이 위험이 있어서 ../를 시작으로 꼭 사용해야 사진 
+    경로 유실이 생기지 않는다 -->
+
+    src : 경로 alt : 대체텍스트
+    <!-- 로딩에 실패했을때(경로 오류, 인터넷오류) -->
+    <!-- 접근성(시각장애인) -->
+
+    <img
+      src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEyMzFfMTUz%2FMDAxNzAzOTg5MzY5NzI0.BQaoRwanXHFPKVRtBsuiPPypVs4cHe5NshvDeuVeWMsg.0MLzHYcH9URnkZdIsrlXH7KYhG9EJrJD0NhMcXxXymMg.JPEG.a58012%2F_DSC0385.jpg&type=sc960_832"
+      alt=""
+    />
+
+    <!-- 웹사이트에 있는 이미지주소를 복사하여 가지고오는 방법도 있다 -->
+    <!-- 내 폴더에 이미지를 포함시키는 방식과 다른서버에 이미지를 가져다 쓰는 방식은 장단점이 있다 -->
+    <!-- 내 서버에 이미지를 넣으면 용량과 트래픽 사용량이 증가하지만 안정적이거 -->
+    <!-- 외부서버에 기져오면 요량, 트래픽은 감소하지만 외부서버상태에 따라서 로드가 안될 수도 있다 -->
+
+    <!-- 이미지는 용량이 가벼우니 내 서버에 두고 동영상같은
+        용량이 큰 경우는 외부서버에 올린 후 웹사이트링크로 가져온다(ex 유튜브) -->
+  </body>
+</html>
