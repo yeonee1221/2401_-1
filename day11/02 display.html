@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: gray;
+
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  
+        
+    css박스모델에서 중요한 속성 두가지는
+    블록과 인라인 display : inline;
+    속성을통해서 블럭요소를 인라인요소로 만들 수 있다.
+    
+    display에 들어갈 수 있는 속성은 
+    1. block 2. inline 3. inline-block 4.none 5. flex 6. grid
+    -->
+
+    <!--
+     3. inline-block같은 경우는 
+    블럭 속성을 유지하면서 inline 의 흐름에 따르도록 해주는데
+    블록을 한불에 배치해주는 유용한 속성이지만
+    구조를 잡는데 사용하기에는 적합하지 않다.
+    블럭 요소를 baseline 위에 얹어야 되는 상황에서는 굉장히 유용하다.-->
+
+    <!-- 4.none 은 아예 개체를 출력하지 않는 속성
+    웹에서 컨텐츠를 숨기는 방법은 여러가지가 있는데 
+    그 중 가장 강력한 방식 아예 출력을 하지 않기 때문에 -->
+
+    <div class="box"></div>
+
+    <!-- display: none; 같은 속성은 정적인 웹사이트에서는 필요 없을 수도 있다 -->
+    <!-- 하지만 반응형웹이나 사용자의 행동에따라 반응하는 인터렉티브 웹 같은 경우에는 
+    유용하게 쓰일 수 있응 속성이다 
+    하지만 display 속성은 특성상 애니메이션 구현같은데에는 쓰기가 어렵다-->
+  </body>
+</html>
