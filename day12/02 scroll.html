@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .scro-box {
+        overflow: scroll;
+        /* 이런식으러 overflow 자체에 스크롤 속성을 넣으면 x,y 양방향에 스크롤이 생기는 문제가 있음 */
+        width: 200px;
+        height: 200px;
+
+        margin-bottom: 30px;
+      }
+
+      .scro-y-box {
+        width: 200px;
+        height: 200px;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scro-box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, incidunt.
+      Cupiditate odit dolores libero amet, accusantium a et quae reprehenderit
+      quam corrupti incidunt in rerum ut non aut inventore maxime.
+    </div>
+
+    <div class="scro-y-box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, incidunt.
+      Cupiditate odit dolores libero amet, accusantium a et quae reprehenderit
+      quam corrupti incidunt in rerum ut non aut inventore maxime.
+    </div>
+  </body>
+</html>

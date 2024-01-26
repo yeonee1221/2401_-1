@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .contents1 {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        float: left;
+        box-sizing: border-box;
+        margin: 10px;
+      }
+
+      .contents2 {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        float: left;
+        box-sizing: border-box;
+
+        margin: 10px;
+        margin-left: 30px;
+      }
+
+      .contents3 {
+        width: 200px;
+        overflow: hidden;
+        border: 2px solid black;
+        float: left;
+        box-sizing: border-box;
+
+        margin: 10px;
+        margin-left: 30px;
+      }
+
+      .contents4 {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border: 2px solid black;
+        float: left;
+        box-sizing: border-box;
+
+        margin: 10px;
+        margin-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contents1">
+      <h4>콘텐트 양이 일정</h4>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dolorum
+        voluptatum soluta, temporibus itaque praesentium dolor voluptatibus nisi
+        beatae sapiente quo ut expedita
+      </p>
+    </div>
+
+    <div class="contents2">
+      <h4>콘텐트 양이 많거나 유동적일 때 흘러 넘침</h4>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dolorum
+        voluptatum soluta, temporibus itaque praesentium dolor voluptatibus nisi
+        beatae sapiente quo ut expedita assumenda maxime. Magnam pariatur
+        dolores earum natus.
+      </p>
+    </div>
+
+    <div class="contents3">
+      <h4>콘텐트 양에 따라서 높이가 늘어남</h4>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dolorum
+        voluptatum soluta, temporibus itaque praesentium dolor voluptatibus nisi
+        beatae sapiente quo ut expedita assumenda maxime. Magnam pariatur
+        dolores earum natus.
+      </p>
+    </div>
+
+    <div class="contents4">
+      <h4>박스의 지정된 높이만큼 콘텐츠가 보임</h4>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dolorum
+        voluptatum soluta, temporibus itaque praesentium dolor voluptatibus nisi
+        beatae sapiente quo ut expedita assumenda maxime. Magnam pariatur
+        dolores earum natus.
+      </p>
+    </div>
+  </body>
+</html>
